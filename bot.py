@@ -7,7 +7,7 @@
 
 """
 
-OWNER_IDS = 8773630118
+OWNER_ID = int(os.getenv("OWNER_ID", "8773630118"))    
 
 import asyncio
 import hashlib
