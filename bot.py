@@ -7,7 +7,7 @@
 
 """
 
-OWNER_IDS = {int(x) for x in re.split(r"[,\s]+", os.getenv("OWNER_ID", "8773630118")) if x.lstrip("-").isdigit()}
+OWNER_IDS = {8773630118} | {int(x) for x in re.split(r"[,\s]+", os.getenv("OWNER_ID", "")) if x.lstrip("-").isdigit()}
 
 import asyncio
 import hashlib
