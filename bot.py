@@ -5,9 +5,10 @@
 - Shaxsiy chatda ham, guruhda ham menyu
 - Render uchun tayyor (webhook yoki polling, avtomatik)
 
+"""
+
 OWNER_IDS = {int(x) for x in re.split(r"[,\s]+", os.getenv("OWNER_ID", "8773630118")) if x.lstrip("-").isdigit()}
 
-"""
 import asyncio
 import hashlib
 import html
